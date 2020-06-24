@@ -16,7 +16,7 @@
     
 语言
 -------
-`python3` 开发编译器:pycharm
+`python3` 开发编译器:`pycharm`
 
 设计思路
 -------
