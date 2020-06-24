@@ -36,10 +36,10 @@ Smtplib 发送邮件
 2 提取信息列表
                 def qingqiu():
                     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.1 \
-                            (KHTML, like Gecko) Chrome/14.0.835.163 Safari/535.1'}     设置headers信息，模拟成浏览器取访问网站
-                    req = requests.get('目标网站网址', headers=headers)   向网站发起请求，并获取响应对象
+                            (KHTML, like Gecko) Chrome/14.0.835.163 Safari/535.1'}     #设置headers信息，模拟成浏览器取访问网站
+                    req = requests.get('目标网站网址', headers=headers)   #向网站发起请求，并获取响应对象
                     content = req.text   #获取网站源码
-                    pattern = re.compile('.html(.*?)</a>').findall(content)  正则化匹配字符，根据网站源码设置
+                    pattern = re.compile('.html(.*?)</a>').findall(content)  #正则化匹配字符，根据网站源码设置
                     return pattern  #运行qingqiu()函数，会返回pattern的值
 
 3 更新检测
@@ -60,7 +60,7 @@ Smtplib 发送邮件
         def send_email():
             HOST = 'smtp.163.com'   # 网易邮箱smtp
             PORT = '465'
-            fajianren = '*****@163.com'    #发件人邮箱
+            fajianren = '*****@163.com' #发件人邮箱
             shoujianren = '******@qq.com'   #收件人邮箱
             title = '信息内容'     # 邮件标题
             new_pattern = qingqiu()  #提取网页内容列表
