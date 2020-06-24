@@ -21,7 +21,8 @@
 设计思路
 -------
 爬取网站推送的信息作为预存信息参考-->每隔5分钟爬取一次信息，与数据库预存信息进行比对-->不一样则调用发送邮件函数，否则继续检测。
-![](https://github.com/zhongy1026/-/raw/image/liucheng.gif)
+
+![liucheng](https://github.com/zhongy1026/-/blob/master/images/liucheng.png)
 
 代码实现
 -------
