@@ -21,6 +21,7 @@
 设计思路
 -------
 爬取网站推送的信息作为预存信息参考-->每隔5分钟爬取一次信息，与数据库预存信息进行比对-->不一样则调用发送邮件函数，否则继续检测。
+![](https://github.com/zhongy1026/-/raw/image/liucheng.gif)
 
 代码实现
 -------
@@ -75,4 +76,4 @@ def send_email():
 ---
 * 使用前需先在send_email函数中设置邮箱账户信息（需获取授权码）
 * 需在qingqiu函数中设置目标网站网址
-* [获取网易邮箱授权码说明]（http://help.mail.163.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2cda80145a1742516）、[获取QQ邮箱授权码说明]（https://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256）
+* [获取网易邮箱授权码说明](http://help.mail.163.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2cda80145a1742516)、[获取QQ邮箱授权码说明](https://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256)
